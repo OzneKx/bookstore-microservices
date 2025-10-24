@@ -12,3 +12,7 @@ spring:
     show-sql: true
     properties:
       hibernate.format_sql: true
+
+jwt:
+  secret: uV1tq93kPZq0aHfQ8cD6vZrX9yWnT3sM4bE2rL9kF1gJ7hQ5uN0dC8vR6xB1tP3Z
+  expiration: 3600000
