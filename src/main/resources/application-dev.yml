@@ -16,3 +16,12 @@ spring:
 jwt:
   secret: uV1tq93kPZq0aHfQ8cD6vZrX9yWnT3sM4bE2rL9kF1gJ7hQ5uN0dC8vR6xB1tP3Z
   expiration: 3600000
+
+swagger:
+  server:
+    url: ${SWAGGER_SERVER_URL:http://localhost:8081}
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+  api-docs:
+    path: /v3/api-docs

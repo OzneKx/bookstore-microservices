@@ -13,3 +13,12 @@ spring:
 jwt:
   secret: ${JWT_SECRET}
   expiration: ${JWT_EXPIRATION}
+
+swagger:
+  server:
+    url: ${SWAGGER_SERVER_URL:http://auth-service:8081}
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+  api-docs:
+    path: /v3/api-docs
