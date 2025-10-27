@@ -8,7 +8,10 @@ spring:
     password: ${POSTGRES_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
 
 jwt:
   secret: ${JWT_SECRET}
@@ -16,7 +19,8 @@ jwt:
 
 swagger:
   server:
-    url: ${SWAGGER_SERVER_URL:http://auth-service:8081}
+    url: ${SWAGGER_SERVER_URL:http://localhost:8081}
+
 springdoc:
   swagger-ui:
     path: /swagger-ui
