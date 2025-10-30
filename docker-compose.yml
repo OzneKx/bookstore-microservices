@@ -1,6 +1,7 @@
 services:
   postgres-auth:
-    image: postgres:16
+    image: postgres:17
+    platform: linux/arm64
     container_name: postgres-auth
     restart: always
     environment:
@@ -37,8 +38,48 @@ services:
     networks:
       - bookstore-network
 
+  postgres-catalog:
+    image: postgres:17
+    platform: linux/arm64
+    container_name: postgres-catalog
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: catalog_db
+    ports:
+      - "5434:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_catalog_data:/var/lib/postgresql/data
+    networks:
+      - bookstore-network
+
+  catalog-service:
+    build:
+      context: ./catalog-service
+      dockerfile: Dockerfile
+    container_name: catalog-service
+    restart: on-failure
+    depends_on:
+      postgres-catalog:
+        condition: service_healthy
+    env_file:
+      - ./catalog-service/.env
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+    ports:
+      - "8082:8082"
+    networks:
+      - bookstore-network
+
 networks:
   bookstore-network:
 
 volumes:
   postgres_auth_data:
+  postgres_catalog_data:
