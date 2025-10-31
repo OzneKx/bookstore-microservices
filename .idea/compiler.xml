@@ -27,13 +27,18 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
         </processorPath>
         <module name="catalog" />
+        <module name="catalog-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="catalog" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="authservice" options="-parameters" />
       <module name="catalog" options="-parameters" />
+      <module name="catalog-service" options="-parameters" />
     </option>
   </component>
 </project>
