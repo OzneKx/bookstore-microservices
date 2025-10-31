@@ -5,10 +5,10 @@ import com.bookstore.catalog.data.mapper.BookMapper;
 import com.bookstore.catalog.data.repository.BookRepository;
 import com.bookstore.catalog.dto.BookRequest;
 import com.bookstore.catalog.dto.BookResponse;
-import org.springframework.http.HttpStatus;
+import com.bookstore.catalog.exception.IsbnAlreadyExistsException;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,7 +26,7 @@ public class BookService {
     @Transactional
     public BookResponse create(BookRequest bookRequest) {
         bookRepository.findByIsbnIgnoreCase(bookRequest.isbn()).ifPresent(book -> {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Book with this ISBN already exists");
+            throw new IsbnAlreadyExistsException(bookRequest.isbn());
         });
 
         Book book = bookMapper.toEntity(bookRequest);
@@ -49,7 +49,7 @@ public class BookService {
 
         Optional<Book> existingBook = bookRepository.findByIsbnIgnoreCase(bookRequest.isbn());
         if (existingBook.isPresent() && !existingBook.get().getId().equals(id)) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Another book with this ISBN already exists");
+            throw new IsbnAlreadyExistsException(bookRequest.isbn());
         }
 
         bookMapper.updateEntityFromRequest(bookRequest, book);
@@ -64,7 +64,6 @@ public class BookService {
     }
 
     private Book checkExistentBook(Long id) {
-        return bookRepository.findById(id).orElseThrow(() ->
-                new ResponseStatusException(HttpStatus.NOT_FOUND, "Book not found"));
+        return bookRepository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
 }
