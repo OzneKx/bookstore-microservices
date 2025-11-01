@@ -77,9 +77,48 @@ services:
     networks:
       - bookstore-network
 
+  postgres-order:
+    image: postgres:17
+    platform: linux/arm64
+    container_name: postgres-order
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: order_db
+    ports:
+      - "5435:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_order_data:/var/lib/postgresql/data
+    networks:
+      - bookstore-network
+
+  order-service:
+    build:
+      context: ./order-service
+      dockerfile: Dockerfile
+    container_name: order-service
+    restart: on-failure
+    depends_on:
+      postgres-order:
+        condition: service_healthy
+    env_file:
+      - ./order-service/.env
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+    ports:
+      - "8083:8083"
+    networks:
+      - bookstore-network
 networks:
   bookstore-network:
 
 volumes:
   postgres_auth_data:
   postgres_catalog_data:
+  postgres_order_data:
