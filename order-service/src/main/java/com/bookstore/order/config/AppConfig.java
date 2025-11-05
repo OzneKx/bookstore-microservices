@@ -1,4 +1,4 @@
-package com.bookstore.catalog.config;
+package com.bookstore.order.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
