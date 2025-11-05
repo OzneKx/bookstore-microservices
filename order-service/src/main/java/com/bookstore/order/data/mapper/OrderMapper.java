@@ -13,7 +13,7 @@ import java.util.List;
 public interface OrderMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "total", ignore = true)
-    @Mapping(target = "status", ignore = true)
+    @Mapping(target = "orderStatus", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     Order toEntity(OrderRequest orderRequest);
 
@@ -23,7 +23,7 @@ public interface OrderMapper {
                 order.getId(),
                 order.getUserId(),
                 order.getTotal(),
-                order.getOrderStatus().name(),
+                order.getOrderStatus(),
                 order.getCreatedAt(),
                 items
         );
