@@ -54,6 +54,7 @@
       <module name="catalog" options="-parameters" />
       <module name="catalog-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="order" options="-parameters" />
     </option>
