@@ -9,6 +9,8 @@ import com.bookstore.order.data.repository.OrderItemRepository;
 import com.bookstore.order.data.repository.OrderRepository;
 import com.bookstore.order.dto.OrderRequest;
 import com.bookstore.order.dto.OrderResponse;
+import com.bookstore.order.messaging.event.OrderCreatedEvent;
+import com.bookstore.order.messaging.publisher.OrderEventPublisher;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -34,15 +36,18 @@ public class OrderService {
     private final OrderItemRepository orderItemRepository;
     private final OrderMapper orderMapper;
     private final OrderItemMapper orderItemMapper;
+    private final OrderEventPublisher orderEventPublisher;
 
     private final RestTemplate restTemplate;
 
     public OrderService(OrderRepository orderRepository, OrderItemRepository orderItemRepository,
-                        OrderMapper orderMapper, OrderItemMapper orderItemMapper, RestTemplate restTemplate) {
+                        OrderMapper orderMapper, OrderItemMapper orderItemMapper,
+                        OrderEventPublisher orderEventPublisher, RestTemplate restTemplate) {
         this.orderRepository = orderRepository;
         this.orderItemRepository = orderItemRepository;
         this.orderMapper = orderMapper;
         this.orderItemMapper = orderItemMapper;
+        this.orderEventPublisher = orderEventPublisher;
         this.restTemplate = restTemplate;
     }
 
@@ -69,6 +74,9 @@ public class OrderService {
         orderItemRepository.saveAll(items);
         order.setTotal(total);
         orderRepository.save(order);
+
+        OrderCreatedEvent event = new OrderCreatedEvent(order.getId(), order.getUserId(), order.getTotal());
+        orderEventPublisher.publishOrderCreated(event);
 
         return orderMapper.toResponse(order, orderItemMapper.toResponseList(items));
     }

@@ -62,3 +62,67 @@ This generated password is for development use only. Your security configuration
 2025-11-09T00:00:55.170-03:00  INFO 81437 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2025-11-09T00:00:55.180-03:00  INFO 81437 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/192.168.99.105:order-service:8083 - deregister  status: 200
 2025-11-09T00:00:55.180-03:00  INFO 81437 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-11-09T00:38:22.247-03:00  INFO 85073 --- [order-service] [main] c.bookstore.order.OrderApplicationTests  : Starting OrderApplicationTests using Java 21.0.7 with PID 85073 (started by kenzoalbuquerque in /Users/kenzoalbuquerque/bookstore-microservice/order-service)
+2025-11-09T00:38:22.248-03:00 DEBUG 85073 --- [order-service] [main] c.bookstore.order.OrderApplicationTests  : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-09T00:38:22.248-03:00  INFO 85073 --- [order-service] [main] c.bookstore.order.OrderApplicationTests  : The following 1 profile is active: "dev"
+2025-11-09T00:38:22.518-03:00  INFO 85073 --- [order-service] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'restTemplate' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=appConfig; factoryMethodName=restTemplate; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bookstore/order/config/AppConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=restTemplateConfig; factoryMethodName=restTemplate; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bookstore/order/config/RestTemplateConfig.class]]
+2025-11-09T00:38:22.652-03:00  INFO 85073 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-09T00:38:22.708-03:00  INFO 85073 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2025-11-09T00:38:22.818-03:00  INFO 85073 --- [order-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=82716077-3169-3f07-a625-9cf5d2e0a705
+2025-11-09T00:38:22.937-03:00  INFO 85073 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-09T00:38:22.953-03:00  INFO 85073 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-09T00:38:22.963-03:00  INFO 85073 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-09T00:38:23.045-03:00  INFO 85073 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-09T00:38:23.059-03:00  INFO 85073 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T00:38:23.127-03:00  INFO 85073 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75fa9254
+2025-11-09T00:38:23.127-03:00  INFO 85073 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T00:38:23.158-03:00  INFO 85073 --- [order-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-09T00:38:23.436-03:00  INFO 85073 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-09T00:38:23.463-03:00  INFO 85073 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-09T00:38:23.704-03:00  WARN 85073 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-09T00:38:23.728-03:00  WARN 85073 --- [order-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 940af554-3030-4c48-a3d9-3ee610330418
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-09T00:38:24.038-03:00  INFO 85073 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-11-09T00:38:24.061-03:00  INFO 85073 --- [order-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-09T00:38:24.072-03:00  WARN 85073 --- [order-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-09T00:38:24.093-03:00  INFO 85073 --- [order-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-09T00:38:24.100-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-09T00:38:24.101-03:00  INFO 85073 --- [order-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-09T00:38:24.104-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-09T00:38:24.219-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-09T00:38:24.220-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-09T00:38:24.220-03:00  INFO 85073 --- [order-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-09T00:38:24.221-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1762659504220 with initial instances count: 4
+2025-11-09T00:38:24.222-03:00  INFO 85073 --- [order-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2025-11-09T00:38:24.222-03:00  INFO 85073 --- [order-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762659504222, current=UP, previous=STARTING]
+2025-11-09T00:38:24.223-03:00  INFO 85073 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/192.168.99.105:order-service:8083: registering service...
+2025-11-09T00:38:24.232-03:00  INFO 85073 --- [order-service] [main] c.bookstore.order.OrderApplicationTests  : Started OrderApplicationTests in 2.159 seconds (process running for 2.55)
+2025-11-09T00:38:24.242-03:00  INFO 85073 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/192.168.99.105:order-service:8083 - registration status: 204
+2025-11-09T00:38:24.528-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2025-11-09T00:38:24.528-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762659504528, current=DOWN, previous=UP]
+2025-11-09T00:38:24.528-03:00  INFO 85073 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/192.168.99.105:order-service:8083: registering service...
+2025-11-09T00:38:24.534-03:00  INFO 85073 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/192.168.99.105:order-service:8083 - registration status: 204
+2025-11-09T00:38:24.535-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-09T00:38:24.536-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-09T00:38:24.538-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-09T00:38:24.538-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-11-09T00:38:27.544-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-11-09T00:38:27.567-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/192.168.99.105:order-service:8083 - deregister  status: 200
+2025-11-09T00:38:27.568-03:00  INFO 85073 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
