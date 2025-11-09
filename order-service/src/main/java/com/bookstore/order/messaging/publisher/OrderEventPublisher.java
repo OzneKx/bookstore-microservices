@@ -14,7 +14,7 @@ public class OrderEventPublisher {
     private final RabbitTemplate rabbitTemplate;
 
     public void publishOrderCreated(OrderCreatedEvent event) {
-        rabbitTemplate.convertAndSend(RabbitNames.ORDER_EXCHANGE, RabbitNames.ORDER_CREATED_QUEUE, event);
+        rabbitTemplate.convertAndSend(RabbitNames.ORDER_EXCHANGE, RabbitNames.ORDER_CREATED_ROUTING_KEY, event);
         log.info("OrderCreatedEvent published: {}", event);
     }
 }
