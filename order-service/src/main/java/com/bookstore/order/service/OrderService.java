@@ -87,14 +87,15 @@ public class OrderService {
     }
 
     private BigDecimal getBookPrice(Long id) {
-        String url = "http://localhost:8081/books/" + id;
+        String url = "http://catalog-service/books/" + id;
         try {
             Map<?, ?> response = restTemplate.getForObject(url, Map.class);
             if (response != null && response.containsKey("price")) {
                 return new BigDecimal(response.get("price").toString());
             }
         } catch (Exception e) {
-            throw new RuntimeException("Failed to fetch book price from catalog-service");
+            e.printStackTrace();
+            throw new RuntimeException("Failed to fetch book price from catalog-service: " + e.getMessage());
         }
         throw new RuntimeException("Book not found in catalog-service");
     }
