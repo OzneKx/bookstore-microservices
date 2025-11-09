@@ -10,9 +10,18 @@ import com.bookstore.order.data.repository.OrderRepository;
 import com.bookstore.order.dto.OrderRequest;
 import com.bookstore.order.dto.OrderResponse;
 import jakarta.persistence.EntityNotFoundException;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -87,16 +96,41 @@ public class OrderService {
     }
 
     private BigDecimal getBookPrice(Long id) {
-        String url = "http://catalog-service/books/" + id;
-        try {
-            Map<?, ?> response = restTemplate.getForObject(url, Map.class);
-            if (response != null && response.containsKey("price")) {
-                return new BigDecimal(response.get("price").toString());
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Failed to fetch book price from catalog-service: " + e.getMessage());
+        ServletRequestAttributes attrs =
+                (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+
+        String authHeader = null;
+        if (attrs != null && attrs.getRequest() != null) {
+            authHeader = attrs.getRequest().getHeader(HttpHeaders.AUTHORIZATION);
         }
-        throw new RuntimeException("Book not found in catalog-service");
+        if (authHeader == null || authHeader.isBlank()) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Missing Authorization header");
+        }
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set(HttpHeaders.AUTHORIZATION, authHeader);
+        HttpEntity<Void> entity = new HttpEntity<>(headers);
+
+        String url = "http://catalog-service/books/{id}";
+        try {
+            ResponseEntity<Map> resp = restTemplate.exchange(
+                    url,
+                    HttpMethod.GET,
+                    entity,
+                    Map.class,
+                    id
+            );
+
+            Map<?, ?> body = resp.getBody();
+            if (body != null && body.containsKey("price")) {
+                return new BigDecimal(body.get("price").toString());
+            }
+            throw new RuntimeException("Book not found in catalog-service");
+        } catch (HttpClientErrorException e) {
+            throw new RuntimeException("Failed to fetch book price from catalog-service: " + e.getStatusCode()
+                    + " " + e.getResponseBodyAsString());
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to fetch book price from catalog-service", e);
+        }
     }
 }
