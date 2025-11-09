@@ -3,3 +3,32 @@ spring:
     name: catalog-service
   profiles:
     active: dev
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate.SQL: WARN
+    org.springframework.security: WARN
+    com.bookstore: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/${spring.application.name}.log
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

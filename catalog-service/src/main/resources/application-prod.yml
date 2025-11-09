@@ -2,6 +2,8 @@ server:
   port: 8082
 
 spring:
+  application:
+    name: catalog-service
   datasource:
     url: jdbc:postgresql://postgres-catalog:5432/catalog_db
     username: ${POSTGRES_USER}
@@ -13,6 +15,12 @@ spring:
       hibernate:
         format_sql: true
 
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: ${RABBIT_USERNAME:guest}
+    password: ${RABBIT_PASSWORD:guest}
+
 jwt:
   secret: ${JWT_SECRET}
   expiration: ${JWT_EXPIRATION}
@@ -23,13 +31,14 @@ swagger:
 
 springdoc:
   swagger-ui:
-    path: /swagger-ui
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
   api-docs:
     path: /v3/api-docs
 
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-server:8761/eureka/}
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-service:8761/eureka/}
   instance:
     prefer-ip-address: true

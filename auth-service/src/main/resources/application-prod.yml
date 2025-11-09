@@ -23,13 +23,14 @@ swagger:
 
 springdoc:
   swagger-ui:
-    path: /swagger-ui
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
   api-docs:
     path: /v3/api-docs
 
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-server:8761/eureka/}
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-service:8761/eureka/}
   instance:
     prefer-ip-address: true
