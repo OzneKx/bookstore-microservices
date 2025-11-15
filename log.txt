@@ -1,0 +1,420 @@
+sformer
+order-service     | 2025-11-15 04:48:41 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+auth-service      | 2025-11-15T04:48:41.186Z  INFO 1 --- [auth-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+catalog-service   | 2025-11-15 04:48:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e466d
+catalog-service   | 2025-11-15 04:48:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+auth-service      | 2025-11-15T04:48:41.334Z  INFO 1 --- [auth-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c68a63c
+auth-service      | 2025-11-15T04:48:41.337Z  INFO 1 --- [auth-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+catalog-service   | 2025-11-15 04:48:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+catalog-service   |     Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+catalog-service   |     Database driver: undefined/unknown
+catalog-service   |     Database version: 17.6
+catalog-service   |     Autocommit mode: undefined/unknown
+catalog-service   |     Isolation level: undefined/unknown
+catalog-service   |     Minimum pool size: undefined/unknown
+catalog-service   |     Maximum pool size: undefined/unknown
+auth-service      | 2025-11-15T04:48:41.396Z  INFO 1 --- [auth-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+auth-service      |     Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+auth-service      |     Database driver: undefined/unknown
+auth-service      |     Database version: 17.6
+auth-service      |     Autocommit mode: undefined/unknown
+auth-service      |     Isolation level: undefined/unknown
+auth-service      |     Minimum pool size: undefined/unknown
+auth-service      |     Maximum pool size: undefined/unknown
+order-service     | 2025-11-15 04:48:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+order-service     | 2025-11-15 04:48:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+order-service     | 2025-11-15 04:48:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@490fbeaa
+order-service     | 2025-11-15 04:48:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+gateway-service   | 2025-11-15T04:48:41.639Z  INFO 1 --- [gateway-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7393445c-aec5-35f2-b98a-1024a6e83b4c
+order-service     | 2025-11-15 04:48:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+order-service     |     Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+order-service     |     Database driver: undefined/unknown
+order-service     |     Database version: 17.6
+order-service     |     Autocommit mode: undefined/unknown
+order-service     |     Isolation level: undefined/unknown
+order-service     |     Minimum pool size: undefined/unknown
+order-service     |     Maximum pool size: undefined/unknown
+gateway-service   | 2025-11-15T04:48:41.697Z  WARN 1 --- [gateway-service] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+gateway-service   | 2025-11-15T04:48:41.707Z  INFO 1 --- [gateway-service] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+gateway-service   | 
+gateway-service   | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+gateway-service   | 2025-11-15T04:48:41.722Z ERROR 1 --- [gateway-service] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+gateway-service   | 
+gateway-service   | ***************************
+gateway-service   | APPLICATION FAILED TO START
+gateway-service   | ***************************
+gateway-service   | 
+gateway-service   | Description:
+gateway-service   | 
+gateway-service   | Web application could not be started as there was no org.springframework.boot.web.reactive.server.ReactiveWebServerFactory bean defined in the context.
+gateway-service   | 
+gateway-service   | Action:
+gateway-service   | 
+gateway-service   | Check your application's dependencies for a supported reactive web server.
+gateway-service   | Check the configured web application type.
+gateway-service   | 
+gateway-service exited with code 1 (restarting)                                                                                                                                      
+catalog-service   | 2025-11-15 04:48:41 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+catalog-service   | 2025-11-15 04:48:42 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+catalog-service   | 2025-11-15 04:48:42 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "ukkibbepcitr0a3cpk3rfr7nihn" of relation "books" does not exist, skipping
+catalog-service   | 2025-11-15 04:48:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+auth-service      | 2025-11-15T04:48:42.023Z  INFO 1 --- [auth-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+auth-service      | 2025-11-15T04:48:42.065Z  WARN 1 --- [auth-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+auth-service      | 2025-11-15T04:48:42.065Z  WARN 1 --- [auth-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukna3v9f8s7ucnj16tylrs822qj" of relation "tokens" does not exist, skipping
+auth-service      | 2025-11-15T04:48:42.068Z  WARN 1 --- [auth-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+auth-service      | 2025-11-15T04:48:42.068Z  WARN 1 --- [auth-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+auth-service      | 2025-11-15T04:48:42.071Z  INFO 1 --- [auth-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+order-service     | 2025-11-15 04:48:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+order-service     | 2025-11-15 04:48:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+auth-service      | 2025-11-15T04:48:42.390Z  INFO 1 --- [auth-service] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+catalog-service   | 2025-11-15 04:48:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+catalog-service   | 2025-11-15 04:48:42 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+order-service     | 2025-11-15 04:48:43 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+catalog-service   | 2025-11-15 04:48:43 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+catalog-service   | 
+catalog-service   | Using generated security password: 5f33eefe-0323-496f-a2f4-e1e1f1847db5
+catalog-service   | 
+catalog-service   | This generated password is for development use only. Your security configuration must be updated before running your application in production.
+catalog-service   | 
+gateway-service   | 
+gateway-service   |   .   ____          _            __ _ _
+gateway-service   |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+gateway-service   | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+gateway-service   |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+gateway-service   |   '  |____| .__|_| |_|_| |_\__, | / / / /
+gateway-service   |  =========|_|==============|___/=/_/_/_/
+gateway-service   | 
+gateway-service   |  :: Spring Boot ::                (v3.5.7)
+gateway-service   | 
+auth-service      | 2025-11-15T04:48:43.099Z  WARN 1 --- [auth-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+gateway-service   | 2025-11-15T04:48:43.158Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : Starting GatewayServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+gateway-service   | 2025-11-15T04:48:43.160Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : The following 1 profile is active: "prod"
+order-service     | 2025-11-15 04:48:43 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+order-service     | 2025-11-15 04:48:43 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+order-service     | 
+order-service     | Using generated security password: 8999a894-cc61-477f-a7c0-09669653aaed
+order-service     | 
+order-service     | This generated password is for development use only. Your security configuration must be updated before running your application in production.
+order-service     | 
+auth-service      | 2025-11-15T04:48:43.583Z  INFO 1 --- [auth-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+auth-service      | 2025-11-15T04:48:43.626Z  INFO 1 --- [auth-service] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+catalog-service   | 2025-11-15 04:48:43 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+catalog-service   | 2025-11-15 04:48:43 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+auth-service      | 2025-11-15T04:48:44.191Z  INFO 1 --- [auth-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+order-service     | 2025-11-15 04:48:44 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+auth-service      | 2025-11-15T04:48:44.239Z  WARN 1 --- [auth-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+order-service     | 2025-11-15 04:48:44 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+auth-service      | 2025-11-15T04:48:44.313Z  INFO 1 --- [auth-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+order-service     | 2025-11-15 04:48:44 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+auth-service      | 2025-11-15T04:48:44.360Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+auth-service      | 2025-11-15T04:48:44.372Z  INFO 1 --- [auth-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+auth-service      | 2025-11-15T04:48:44.386Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1763182124426 with initial instances count: 0
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CATALOG-SERVICE with eureka with status UP
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1763182124428, current=UP, previous=STARTING]
+catalog-service   | 2025-11-15 04:48:44 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082: registering service...
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [rabbitmq:5672]
+rabbitmq          | 2025-11-15 04:48:44.496211+00:00 [info] <0.863.0> accepting AMQP connection <0.863.0> (172.18.0.8:36768 -> 172.18.0.6:5672)
+rabbitmq          | 2025-11-15 04:48:44.521730+00:00 [info] <0.863.0> connection <0.863.0> (172.18.0.8:36768 -> 172.18.0.6:5672) has a client-provided name: rabbitConnectionFactory#53141d3f:0
+rabbitmq          | 2025-11-15 04:48:44.526092+00:00 [info] <0.863.0> connection <0.863.0> (172.18.0.8:36768 -> 172.18.0.6:5672 - rabbitConnectionFactory#53141d3f:0): user 'guest' authenticated and granted access to vhost '/'
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#53141d3f:0/SimpleConnection@61c0a61 [delegate=amqp://guest@172.18.0.6:5672/, localPort=36768]
+eureka-service    | 2025-11-15T04:48:44.543Z  INFO 1 --- [eureka-service] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082 with status UP (replication=false)
+catalog-service   | 2025-11-15 04:48:44 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082 - registration status: 204
+catalog-service   | 2025-11-15 04:48:44 [main] INFO  c.b.catalog.CatalogApplication - Started CatalogApplication in 7.703 seconds (process running for 8.312)
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1763182124669 with initial instances count: 0
+order-service     | 2025-11-15 04:48:44 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ORDER-SERVICE with eureka with status UP
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1763182124672, current=UP, previous=STARTING]
+order-service     | 2025-11-15 04:48:44 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ORDER-SERVICE/9399c4213247:order-service:8083: registering service...
+order-service     | 2025-11-15 04:48:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+order-service     | 2025-11-15 04:48:44 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+order-service     | 2025-11-15 04:48:44 [main] INFO  c.bookstore.order.OrderApplication - Started OrderApplication in 7.673 seconds (process running for 8.403)
+gateway-service   | 2025-11-15T04:48:44.695Z  INFO 1 --- [gateway-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7393445c-aec5-35f2-b98a-1024a6e83b4c
+eureka-service    | 2025-11-15T04:48:44.706Z  INFO 1 --- [eureka-service] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/9399c4213247:order-service:8083 with status UP (replication=false)
+order-service     | 2025-11-15 04:48:44 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ORDER-SERVICE/9399c4213247:order-service:8083 - registration status: 204
+auth-service      | 2025-11-15T04:48:44.738Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+auth-service      | 2025-11-15T04:48:44.739Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+auth-service      | 2025-11-15T04:48:44.740Z  INFO 1 --- [auth-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+auth-service      | 2025-11-15T04:48:44.741Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1763182124741 with initial instances count: 0
+auth-service      | 2025-11-15T04:48:44.743Z  INFO 1 --- [auth-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+auth-service      | 2025-11-15T04:48:44.743Z  INFO 1 --- [auth-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1763182124743, current=UP, previous=STARTING]
+auth-service      | 2025-11-15T04:48:44.744Z  INFO 1 --- [auth-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081: registering service...
+gateway-service   | 2025-11-15T04:48:44.750Z  WARN 1 --- [gateway-service] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+auth-service      | 2025-11-15T04:48:44.754Z  INFO 1 --- [auth-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+auth-service      | 2025-11-15T04:48:44.756Z  INFO 1 --- [auth-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+gateway-service   | 2025-11-15T04:48:44.767Z  INFO 1 --- [gateway-service] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+gateway-service   | 
+gateway-service   | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+auth-service      | 2025-11-15T04:48:44.774Z  INFO 1 --- [auth-service] [           main] c.b.authservice.AuthserviceApplication   : Started AuthserviceApplication in 7.832 seconds (process running for 8.497)
+gateway-service   | 2025-11-15T04:48:44.777Z ERROR 1 --- [gateway-service] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+gateway-service   | 
+gateway-service   | ***************************able Watch
+gateway-service   | APPLICATION FAILED TO START
+gateway-service   | ***************************
+gateway-service   | 
+gateway-service   | Description:
+gateway-service   | 
+gateway-service   | Web application could not be started as there was no org.springframework.boot.web.reactive.server.ReactiveWebServerFactory bean defined in the context.
+gateway-service   | 
+gateway-service   | Action:
+gateway-service   | 
+gateway-service   | Check your application's dependencies for a supported reactive web server.
+gateway-service   | Check the configured web application type.
+gateway-service   | 
+eureka-service    | 2025-11-15T04:48:44.791Z  INFO 1 --- [eureka-service] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081 with status UP (replication=false)
+auth-service      | 2025-11-15T04:48:44.792Z  INFO 1 --- [auth-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081 - registration status: 204
+gateway-service exited with code 1 (restarting)                                                                                                                                      
+eureka-service    | 2025-11-15T04:48:45.099Z  INFO 1 --- [eureka-service] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082 with status UP (replication=true)
+eureka-service    | 2025-11-15T04:48:45.099Z  INFO 1 --- [eureka-service] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/9399c4213247:order-service:8083 with status UP (replication=true)
+eureka-service    | 2025-11-15T04:48:45.099Z  INFO 1 --- [eureka-service] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081 with status UP (replication=true)
+gateway-service   | 
+gateway-service   |   .   ____          _            __ _ _
+gateway-service   |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+gateway-service   | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+gateway-service   |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+gateway-service   |   '  |____| .__|_| |_|_| |_\__, | / / / /
+gateway-service   |  =========|_|==============|___/=/_/_/_/
+gateway-service   | 
+gateway-service   |  :: Spring Boot ::                (v3.5.7)
+gateway-service   | 
+gateway-service   | 2025-11-15T04:48:45.658Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : Starting GatewayServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+gateway-service   | 2025-11-15T04:48:45.659Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : The following 1 profile is active: "prod"
+gateway-service   | 2025-11-15T04:48:46.291Z  INFO 1 --- [gateway-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7393445c-aec5-35f2-b98a-1024a6e83b4c
+gateway-service   | 2025-11-15T04:48:46.325Z  WARN 1 --- [gateway-service] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+gateway-service   | 2025-11-15T04:48:46.334Z  INFO 1 --- [gateway-service] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+gateway-service   | 
+gateway-service   | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+gateway-service   | 2025-11-15T04:48:46.345Z ERROR 1 --- [gateway-service] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+gateway-service   | 
+gateway-service   | ***************************
+gateway-service   | APPLICATION FAILED TO START
+gateway-service   | ***************************
+gateway-service   | 
+gateway-service   | Description:
+gateway-service   | 
+gateway-service   | Web application could not be started as there was no org.springframework.boot.web.reactive.server.ReactiveWebServerFactory bean defined in the context.
+gateway-service   | 
+gateway-service   | Action:
+gateway-service   | 
+gateway-service   | Check your application's dependencies for a supported reactive web server.
+gateway-service   | Check the configured web application type.
+gateway-service   | 
+gateway-service exited with code 1 (restarting)                                                                                                                                      
+gateway-service   | 
+gateway-service   |   .   ____          _            __ _ _
+gateway-service   |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+gateway-service   | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+gateway-service   |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+gateway-service   |   '  |____| .__|_| |_|_| |_\__, | / / / /
+gateway-service   |  =========|_|==============|___/=/_/_/_/
+gateway-service   | 
+gateway-service   |  :: Spring Boot ::                (v3.5.7)
+gateway-service   | 
+gateway-service   | 2025-11-15T04:48:47.642Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : Starting GatewayServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+gateway-service   | 2025-11-15T04:48:47.643Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : The following 1 profile is active: "prod"
+gateway-service   | 2025-11-15T04:48:48.166Z  INFO 1 --- [gateway-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7393445c-aec5-35f2-b98a-1024a6e83b4c
+gateway-service   | 2025-11-15T04:48:48.194Z  WARN 1 --- [gateway-service] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+gateway-service   | 2025-11-15T04:48:48.201Z  INFO 1 --- [gateway-service] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+gateway-service   | 
+gateway-service   | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+gateway-service   | 2025-11-15T04:48:48.208Z ERROR 1 --- [gateway-service] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+gateway-service   | 
+gateway-service   | ***************************
+gateway-service   | APPLICATION FAILED TO START
+gateway-service   | ***************************
+gateway-service   | 
+gateway-service   | Description:
+gateway-service   | 
+gateway-service   | Web application could not be started as there was no org.springframework.boot.web.reactive.server.ReactiveWebServerFactory bean defined in the context.
+gateway-service   | 
+gateway-service   | Action:
+gateway-service   | 
+gateway-service   | Check your application's dependencies for a supported reactive web server.
+gateway-service   | Check the configured web application type.
+gateway-service   | 
+gateway-service exited with code 1 (restarting)                                                                                                                                      
+gateway-service   | 
+gateway-service   |   .   ____          _            __ _ _
+gateway-service   |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+gateway-service   | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+gateway-service   |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+gateway-service   |   '  |____| .__|_| |_|_| |_\__, | / / / /
+gateway-service   |  =========|_|==============|___/=/_/_/_/
+gateway-service   | 
+gateway-service   |  :: Spring Boot ::                (v3.5.7)
+gateway-service   | 
+gateway-service   | 2025-11-15T04:48:50.307Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : Starting GatewayServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+gateway-service   | 2025-11-15T04:48:50.308Z  INFO 1 --- [gateway-service] [           main] c.b.g.GatewayServiceApplication          : The following 1 profile is active: "prod"
+Gracefully Stopping... press Ctrl+C again to force
+ Container gateway-service  Stopping
+ Container rabbitmq  Stopping
+rabbitmq          | 2025-11-15 04:48:50.720678+00:00 [notice] <0.64.0> SIGTERM received - shutting down
+rabbitmq          | 2025-11-15 04:48:50.720678+00:00 [notice] <0.64.0> 
+rabbitmq          | 2025-11-15 04:48:50.722171+00:00 [warning] <0.714.0> HTTP listener registry could not find context rabbitmq_prometheus_tls
+rabbitmq          | 2025-11-15 04:48:50.725731+00:00 [warning] <0.714.0> HTTP listener registry could not find context rabbitmq_management_tls
+rabbitmq          | 2025-11-15 04:48:50.731761+00:00 [info] <0.850.0> stopped TCP listener on [::]:5672
+rabbitmq          | 2025-11-15 04:48:50.732705+00:00 [error] <0.863.0> Error on AMQP connection <0.863.0> (172.18.0.8:36768 -> 172.18.0.6:5672 - rabbitConnectionFactory#53141d3f:0, vhost: '/', user: 'guest', state: running), channel 0:                                                                                                                               
+rabbitmq          | 2025-11-15 04:48:50.732705+00:00 [error] <0.863.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"                                                                                                                                                                         
+rabbitmq          | 2025-11-15 04:48:50.734059+00:00 [info] <0.636.0> Virtual host '/' is stopping
+rabbitmq          | 2025-11-15 04:48:50.734253+00:00 [info] <0.895.0> Closing all connections in vhost '/' on node 'rabbit@ba0a319496aa' because the vhost is stopping
+rabbitmq          | 2025-11-15 04:48:50.737669+00:00 [info] <0.649.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@ba0a319496aa/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+rabbitmq          | 2025-11-15 04:48:50.741349+00:00 [info] <0.649.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@ba0a319496aa/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent' is stopped
+rabbitmq          | 2025-11-15 04:48:50.741505+00:00 [info] <0.645.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@ba0a319496aa/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient'
+rabbitmq          | 2025-11-15 04:48:50.744483+00:00 [info] <0.645.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@ba0a319496aa/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient' is stopped
+gateway-service   | 2025-11-15T04:48:50.889Z  INFO 1 --- [gateway-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7393445c-aec5-35f2-b98a-1024a6e83b4c
+gateway-service   | 2025-11-15T04:48:50.919Z  WARN 1 --- [gateway-service] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+ Container gateway-service  Stopped
+ Container catalog-service  Stopping
+ Container order-service  Stopping
+ Container auth-service  Stopping
+gateway-service exited with code 143                                                                                                                                                 
+auth-service      | 2025-11-15T04:48:51.041Z  INFO 1 --- [auth-service] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTH-SERVICE with eureka with status DOWN
+auth-service      | 2025-11-15T04:48:51.041Z  INFO 1 --- [auth-service] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1763182131041, current=DOWN, previous=UP]
+auth-service      | 2025-11-15T04:48:51.041Z  INFO 1 --- [auth-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081: registering service...
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CATALOG-SERVICE with eureka with status DOWN
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ORDER-SERVICE with eureka with status DOWN
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1763182131040, current=DOWN, previous=UP]
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1763182131040, current=DOWN, previous=UP]
+order-service     | 2025-11-15 04:48:51 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ORDER-SERVICE/9399c4213247:order-service:8083: registering service...
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+catalog-service   | 2025-11-15 04:48:51 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082: registering service...
+auth-service      | 2025-11-15T04:48:51.044Z  INFO 1 --- [auth-service] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+order-service     | 2025-11-15 04:48:51 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+auth-service      | 2025-11-15T04:48:51.046Z  INFO 1 --- [auth-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+catalog-service   | 2025-11-15 04:48:51 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+catalog-service   | 2025-11-15 04:48:51 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+order-service     | 2025-11-15 04:48:51 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ORDER-SERVICE/9399c4213247:order-service:8083 - registration status: 204
+auth-service      | 2025-11-15T04:48:51.050Z  INFO 1 --- [auth-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081 - registration status: 204
+catalog-service   | 2025-11-15 04:48:51 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+catalog-service   | 2025-11-15 04:48:51 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082 - registration status: 204
+eureka-service    | 2025-11-15T04:48:51.048Z  INFO 1 --- [eureka-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/9399c4213247:order-service:8083 with status DOWN (replication=false)
+eureka-service    | 2025-11-15T04:48:51.048Z  INFO 1 --- [eureka-service] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081 with status DOWN (replication=false)
+eureka-service    | 2025-11-15T04:48:51.053Z  INFO 1 --- [eureka-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082 with status DOWN (replication=false)
+auth-service      | 2025-11-15T04:48:51.059Z  INFO 1 --- [auth-service] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+auth-service      | 2025-11-15T04:48:51.060Z  INFO 1 --- [auth-service] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+auth-service      | 2025-11-15T04:48:51.066Z  INFO 1 --- [auth-service] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+auth-service      | 2025-11-15T04:48:51.066Z  INFO 1 --- [auth-service] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+order-service     | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+catalog-service   | 2025-11-15 04:48:51 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+eureka-service    | 2025-11-15T04:48:51.561Z  INFO 1 --- [eureka-service] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/9399c4213247:order-service:8083 with status DOWN (replication=true)
+eureka-service    | 2025-11-15T04:48:51.562Z  INFO 1 --- [eureka-service] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/0f3c7e7ef8bb:auth-service:8081 with status DOWN (replication=true)
+eureka-service    | 2025-11-15T04:48:51.562Z  INFO 1 --- [eureka-service] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CATALOG-SERVICE/7fd7be8bab2e:catalog-service:8082 with status DOWN (replication=true)
+catalog-service   | 2025-11-15 04:48:51 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it
+catalog-service   | com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection.startShutdown(AMQConnection.java:1007)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:997)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection.handleConnectionClose(AMQConnection.java:935)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection.processControlCommand(AMQConnection.java:890)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection$1.processAsync(AMQConnection.java:275)
+catalog-service   |     at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:193)
+catalog-service   |     at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:125)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:741)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection.access$400(AMQConnection.java:48)
+catalog-service   |     at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:688)
+catalog-service   |     at java.base/java.lang.Thread.run(Unknown Source)
+ Container rabbitmq  Stopped
+rabbitmq exited with code 137                                                                                                                                                        
+ Container auth-service  Stopped
+ Container postgres-auth  Stopping
+auth-service exited with code 137                                                                                                                                                    
+postgres-auth     | 2025-11-15 04:48:52.274 UTC [1] LOG:  received fast shutdown request
+postgres-auth     | 2025-11-15 04:48:52.275 UTC [1] LOG:  aborting any active transactions
+postgres-auth     | 2025-11-15 04:48:52.276 UTC [1] LOG:  background worker "logical replication launcher" (PID 66) exited with exit code 1
+postgres-auth     | 2025-11-15 04:48:52.277 UTC [61] LOG:  shutting down
+postgres-auth     | 2025-11-15 04:48:52.278 UTC [61] LOG:  checkpoint starting: shutdown immediate
+postgres-auth     | 2025-11-15 04:48:52.290 UTC [61] LOG:  checkpoint complete: wrote 58 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.007 s, total=0.014 s; sync files=50, longest=0.003 s, average=0.001 s; distance=198 kB, estimate=198 kB; lsn=0/1947388, redo lsn=0/1947388
+postgres-auth     | 2025-11-15 04:48:52.292 UTC [1] LOG:  database system is shut down
+ Container catalog-service  Stopped
+ Container postgres-catalog  Stopping
+catalog-service exited with code 137                                                                                                                                                 
+postgres-catalog  | 2025-11-15 04:48:52.308 UTC [1] LOG:  received fast shutdown request
+postgres-catalog  | 2025-11-15 04:48:52.310 UTC [1] LOG:  aborting any active transactions
+postgres-catalog  | 2025-11-15 04:48:52.311 UTC [1] LOG:  background worker "logical replication launcher" (PID 66) exited with exit code 1
+postgres-catalog  | 2025-11-15 04:48:52.311 UTC [61] LOG:  shutting down
+postgres-catalog  | 2025-11-15 04:48:52.312 UTC [61] LOG:  checkpoint starting: shutdown immediate
+postgres-catalog  | 2025-11-15 04:48:52.321 UTC [61] LOG:  checkpoint complete: wrote 51 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.005 s, total=0.011 s; sync files=42, longest=0.003 s, average=0.001 s; distance=172 kB, estimate=172 kB; lsn=0/1940998, redo lsn=0/1940998
+postgres-catalog  | 2025-11-15 04:48:52.323 UTC [1] LOG:  database system is shut down
+ Container order-service  Stopped
+ Container eureka-service  Stopping
+ Container postgres-order  Stopping
+order-service exited with code 137                                                                                                                                                   
+eureka-service    | 2025-11-15T04:48:52.361Z  INFO 1 --- [eureka-service] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA-SERVICE with eureka with status DOWN
+postgres-order    | 2025-11-15 04:48:52.359 UTC [1] LOG:  received fast shutdown request
+postgres-order    | 2025-11-15 04:48:52.361 UTC [1] LOG:  aborting any active transactions
+eureka-service    | 2025-11-15T04:48:52.363Z  INFO 1 --- [eureka-service] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+postgres-order    | 2025-11-15 04:48:52.362 UTC [1] LOG:  background worker "logical replication launcher" (PID 65) exited with exit code 1
+postgres-order    | 2025-11-15 04:48:52.363 UTC [60] LOG:  shutting down
+postgres-order    | 2025-11-15 04:48:52.364 UTC [60] LOG:  checkpoint starting: shutdown immediate
+eureka-service    | 2025-11-15T04:48:52.365Z  INFO 1 --- [eureka-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+eureka-service    | 2025-11-15T04:48:52.368Z  INFO 1 --- [eureka-service] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+eureka-service    | 2025-11-15T04:48:52.368Z  INFO 1 --- [eureka-service] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+eureka-service    | 2025-11-15T04:48:52.371Z  INFO 1 --- [eureka-service] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+eureka-service    | 2025-11-15T04:48:52.371Z  INFO 1 --- [eureka-service] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+eureka-service    | 2025-11-15T04:48:52.369Z ERROR 1 --- [eureka-service] [t-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+eureka-service    | 
+eureka-service    | java.lang.IllegalStateException: Client instance has been closed.
+eureka-service    |     at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.11.jar!/:na]
+eureka-service    |     at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.11.jar!/:na]
+eureka-service    |     at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.11.jar!/:na]
+eureka-service    |     at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.11.jar!/:na]
+eureka-service    |     at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar!/:2.0.4]
+eureka-service    |     at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:na]
+eureka-service    |     at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+eureka-service    |     at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:na]
+eureka-service    |     at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:na]
+eureka-service    |     at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:na]
+eureka-service    |     at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+eureka-service    | 
+eureka-service    | 2025-11-15T04:48:52.371Z  INFO 1 --- [eureka-service] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+eureka-service    | 2025-11-15T04:48:52.372Z  INFO 1 --- [eureka-service] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+eureka-service    | 2025-11-15T04:48:52.375Z  INFO 1 --- [eureka-service] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+eureka-service    | 2025-11-15T04:48:52.375Z  INFO 1 --- [eureka-service] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+postgres-order    | 2025-11-15 04:48:52.380 UTC [60] LOG:  checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.008 s, total=0.018 s; sync files=41, longest=0.003 s, average=0.001 s; distance=163 kB, estimate=163 kB; lsn=0/193E7B0, redo lsn=0/193E7B0
+postgres-order    | 2025-11-15 04:48:52.383 UTC [1] LOG:  database system is shut down
+ Container postgres-auth  Stopped
+postgres-auth exited with code 0                                                                                                                                                     
+ Container postgres-catalog  Stopped
+postgres-catalog exited with code 0                                                                                                                                                  
+ Container postgres-order  Stopped
+postgres-order exited with code 0                                                                                                                                                    
+ Container eureka-service  Stopped
+eureka-service exited with code 143
