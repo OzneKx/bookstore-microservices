@@ -1,4 +1,4 @@
-package com.bookstore.discovery_service;
+package com.bookstore.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
