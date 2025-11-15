@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bookstore</groupId>
-	<artifactId>authservice</artifactId>
+	<artifactId>auth-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>authservice</name>
+	<name>auth-service</name>
 	<description>Authentication microservice for Bookstore ecosystem</description>
 	<url/>
 	<licenses>

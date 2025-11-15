@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bookstore</groupId>
-	<artifactId>order</artifactId>
+	<artifactId>order-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>order</name>
+	<name>order-service</name>
 	<description>Order microservice for Bookstore ecosystem</description>
 	<url/>
 	<licenses>

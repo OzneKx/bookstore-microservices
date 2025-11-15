@@ -1,0 +1,24 @@
+* text=auto
+
+*.sh text eol=lf
+mvnw text eol=lf
+
+*.cmd text eol=crlf
+
+*.jar binary
+*.war binary
+*.zip binary
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+*.java text
+*.xml text
+*.properties text
+*.yml text
+*.yaml text
+*.md text
+*.txt text
