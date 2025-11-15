@@ -1,4 +1,4 @@
-package com.bookstore.gateway_service.security;
+package com.bookstore.gateway.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

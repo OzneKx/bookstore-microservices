@@ -1,6 +1,6 @@
-package com.bookstore.gateway_service.config;
+package com.bookstore.gateway.config;
 
-import com.bookstore.gateway_service.security.JwtAuthFilter;
+import com.bookstore.gateway.security.JwtAuthFilter;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

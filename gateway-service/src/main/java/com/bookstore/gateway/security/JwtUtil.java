@@ -1,4 +1,4 @@
-package com.bookstore.gateway_service.security;
+package com.bookstore.gateway.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
