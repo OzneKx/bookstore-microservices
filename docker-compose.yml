@@ -161,10 +161,14 @@ services:
     container_name: gateway-service
     restart: on-failure
     depends_on:
-      - eureka-service
-      - auth-service
-      - catalog-service
-      - order-service
+      eureka-service:
+        condition: service_healthy
+      auth-service:
+        condition: service_started
+      catalog-service:
+        condition: service_started
+      order-service:
+        condition: service_started
     ports:
       - "8080:8080"
     networks:
